@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+}
+
+
+
+
+.profile-img-container {
+  display: block;
+  width: 106%;
+  height: 90vw;
+  position: fixed;
+}
+
+.profile-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
+
+.scrolling-container {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 45vw;
+}
+
+.user-info-container {
+  width: 100%;
+  background-image: linear-gradient(to top, black, transparent);
+  padding: 30px;
+  text-align: center;
+  padding-top: 25vw;
+  border-style: none;
+}
+
+.username {
+  margin: 0px;
+  font-family: Helvetica;
+}
+.user-name-container {
+  color: white;
+  font-size: 30px;
+  margin: 0px;
+
+}
+
+.userhandle {
+  font-family: Helvetica;
+  font-weight: 400;
+}
+
+.user-handle-container {
+  margin: 0px;
+  color: rgb(193, 193, 193);
+}
+
+
+.sm-bar-container {
+  display:flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.icon-link {
+  border-radius: 5vw;
+}
+
+.icon-container {
+  display: flex;
+  width: 10vw;
+  height: 10vw;
+  background-color: white;
+  border-radius: 5vw;
+}
+
+.sm-icon {
+  object-fit: contain;
+  padding: 20px;
+}
+
+
+
+
+.gallery-container {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  margin: 0px;
+  padding: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-style: none;
+}
+
+.bio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgb(30, 30, 30);
+  border-radius: 4vw;
+  color: white;
+  font-size: 35px;
+  font-family: Helvetica;
+  font-weight: lighter;
+}
+
+.large-sm-link {
+  width: 100%;
+}
+
+.large-image-container {
+  display: flex;
+  width: 100%;
+  height: 53vw;
+  border-radius: 4vw;
+  position: relative;
+  justify-content: center;
+}
+
+.large-gallery-icon-container {
+  display: flex;
+  width: 8vw;
+  height: 8vw;
+  background-color: white;
+  border-radius: 5vw;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 10;
+}
+
+.large-gallery-icon {
+  object-fit: contain;
+  padding: 8px;
+}
+
+.gallery-icon-container {
+  display: flex;
+  width: 5vw;
+  height: 5vw;
+  background-color: white;
+  border-radius: 5vw;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.gallery-icon {
+  object-fit: contain;
+  padding: 10px;
+}
+
+
+
+.link-label {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 40px;
+  bottom: 15px;
+}
+
+.sm-link {
+  width: 48%;
+}
+
+.image-container {
+  display: flex;
+  width: 100%;
+  height: 30vw;
+  border-radius: 4vw;
+  position: relative;
+  justify-content: center;
+}
+
+.gallery-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4vw;
+  position: relative;
+
+}
+
+.large-image-overlay {
+  width: 100%;
+  height: 53vw;
+  border-radius: 4vw;
+  z-index: 5;
+  position: absolute;
+  background-image: linear-gradient(to bottom, transparent, black 250%);
+}
+
+.image-overlay {
+  width: 100%;
+  height: 30vw;
+  border-radius: 4vw;
+  z-index: 5;
+  position: absolute;
+  background-image: linear-gradient(to bottom, transparent, black 250%);
+}
+
+
+/* carousel CSS */
+
+.carousel-container {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 25px;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  background-color: black;
+  padding: 0 30px 30px 30px;
+}
+
+.carousel-image-container {
+  scroll-snap-align: initial;
+  border-radius: 4vw;
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+}
+
+.carousel-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4vw;
+  position: relative;
+}
