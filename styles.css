@@ -41,6 +41,7 @@ body {
   text-align: center;
   padding-top: 25vw;
   border-style: none;
+  margin-bottom: -1vw;
 }
 
 .username {
